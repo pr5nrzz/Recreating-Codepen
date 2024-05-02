@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreating Codepen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Lato:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="codepen">
+        <header class="main-header">
+            <div class="logo">
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="m384-336 56-58-86-86 86-86-56-58-144 144 144 144Zm192 0 144-144-144-144-56 58 86 86-86 86 56 58ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm280-590q13 0 21.5-8.5T510-820q0-13-8.5-21.5T480-850q-13 0-21.5 8.5T450-820q0 13 8.5 21.5T480-790ZM200-200v-560 560Z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="pen__details">
+                <h1 class="pen__title">
+                    <span>Untitled</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z" />
+                    </svg>
+                </h1>
+                <p class="pen__author">Captain Anonymous</p>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav__items">
+                    <li class="nav__item">
+                        <button class="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="M260-160q-91 0-155.5-63T40-377q0-78 47-139t123-78q25-92 100-149t170-57q117 0 198.5 81.5T760-520q69 8 114.5 59.5T920-340q0 75-52.5 127.5T740-160H260Zm0-80h480q42 0 71-29t29-71q0-42-29-71t-71-29h-60v-80q0-83-58.5-141.5T480-720q-83 0-141.5 58.5T280-520h-20q-58 0-99 41t-41 99q0 58 41 99t99 41Zm220-240Z" />
+                            </svg>
+                            <span>Save</span>
+                        </button>
+                    </li>
+                    <li class="nav__item">
+                        <button class="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z" />
+                            </svg>
+                            <span>Settings</span>
+                        </button>
+                    </li>
+                    <li class="nav__item">
+                        <button class="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-480H200v480Zm280-80q-82 0-146.5-44.5T240-440q29-71 93.5-115.5T480-600q82 0 146.5 44.5T720-440q-29 71-93.5 115.5T480-280Zm0-60q56 0 102-26.5t72-73.5q-26-47-72-73.5T480-540q-56 0-102 26.5T306-440q26 47 72 73.5T480-340Zm0-100Zm0 60q25 0 42.5-17.5T540-440q0-25-17.5-42.5T480-500q-25 0-42.5 17.5T420-440q0 25 17.5 42.5T480-380Z" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="nav__item">
+                        <button class="button btn--sign-up">Sign Up</button>
+                    </li>
+                    <li class="nav__item">
+                        <button class="button">Log In</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="code">
+                <div class="editor">
+                    <header class="editor__header">
+                        <h2 class="editor__heading">HTML</h2>
+                        <button class="button button--small editor__settings">⚙</button>
+                        <button class="button button--small editor__settings">⌄</button>
+                    </header>
+                    <div class="editor__code">
+                        <div class="editor__gutter">
+                            <span class="editor__number">1</span>
+                        </div>
+
+                        <textarea class="editor__input"><p>Oh Hey There!</p></textarea>
+                    </div>
+                </div>
+                <div class="editor">
+                    <header class="editor__header">
+                        <h2 class="editor__heading">CSS</h2>
+                        <button class="button button--small editor__settings">⚙</button>
+                        <button class="button button--small editor__settings">⌄</button>
+                    </header>
+                    <div class="editor__code">
+                        <div class="editor__gutter">
+                            <span class="editor__number">1</span>
+                            <span class="editor__number">2</span>
+                            <span class="editor__number">3</span>
+                        </div>
+
+                        <textarea class="editor__input">.codepen {
+          is: cool;
+        }
+                  </textarea>
+                    </div>
+                </div>
+                <div class="editor">
+                    <header class="editor__header">
+                        <h2 class="editor__heading">JS</h2>
+                        <button class="button button--small editor__settings">⚙</button>
+                        <button class="button button--small editor__settings">⌄</button>
+                    </header>
+                    <div class="editor__code">
+                        <div class="editor__gutter">
+                            <span class="editor__number">1</span>
+                        </div>
+                        <textarea class="editor__input">const wes = 'coolest';</textarea>
+                    </div>
+
+                </div>
+            </section>
+            <section class="preview">
+                <iframe src="https://css-tricks.com" frameborder="0"></iframe>
+            </section>
+        </main>
+        <footer class="settings">
+            <button class="button button--small button--black">Console</button>
+            <button class="button button--small button--black">Assets</button>
+            <button class="button button--small button--black">Shortcuts</button>
+        </footer>
+    </div>
+</body>
+
+</html>
